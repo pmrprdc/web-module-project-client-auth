@@ -5,14 +5,7 @@ import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 function Login() {
   return (
     <div>
-        <header>
-        <h1>FRIENDS DATABASE</h1>
-      <Link to="./login">LOGIN</Link>
-      <Link to="./login">FRIENDSLIST</Link>
-      <Link to="./login">ADDFRIEND</Link>
-      <Link to="./login">LOGOUT</Link>
-    
-      </header>
+        
       <h1>LOGIN   
       </h1>
       <label htmlFor="email">Email 
