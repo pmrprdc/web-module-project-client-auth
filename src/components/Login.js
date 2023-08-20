@@ -3,6 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 // Define the component function
 function Login() {
+
+
+    console.log(localStorage.getItem('token'))
   return (
     <div>
         
