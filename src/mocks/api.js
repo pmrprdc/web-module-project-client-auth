@@ -23,12 +23,12 @@ const authenticator = (req, res, next) => {
 //Get All Articles Endpoint
 api.post('/api/login', (req, res) => {
   const {username, password, role, token}  = credentials;
-
+    console.log("test")
   if (username === req.body.username && password === req.body.password) {
     res.json({
-      username,
+      username, 
       role,
-      token
+      token                 
     });
   } else {
     res.status(403).json({ error: 'Incorrect username / password combination.' });
