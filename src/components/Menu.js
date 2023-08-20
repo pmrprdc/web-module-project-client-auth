@@ -10,10 +10,10 @@ export default function Menu () {
 
         <header>
         <h1>FRIENDS DATABASE</h1>
-      <Link to="./login">LOGIN</Link>
-      <Link to="./login">FRIENDSLIST</Link>
-      <Link to="./login">ADDFRIEND</Link>
-      <Link to="./login">LOGOUT</Link>
+      <Link to="./login">LOGIN </Link> 
+      <Link to="./friends">FRIENDSLIST </Link>
+      <Link to="./login">ADDFRIEND </Link>
+      <Link to="./login">LOGOUT </Link>
     
       </header>
     

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const FriendsList = () => {
+
+
   const [friends, setFriends] = useState([]);
 
   useEffect(() => {
@@ -10,11 +12,12 @@ const FriendsList = () => {
     // Make a GET request to retrieve the friends list
     axios.get(`${apiUrl}/api/friends`, {
       headers: {
-        Authorization: 'your-token-goes-here' // Replace with your actual token
+        Authorization: localStorage.getItem('token') // Replace with your actual token
       }
     })
       .then(response => {
         setFriends(response.data); // Update the state with the retrieved data
+        console.log(friends)
       })
       .catch(error => {
         console.error('Error retrieving friends list:', error.message);
