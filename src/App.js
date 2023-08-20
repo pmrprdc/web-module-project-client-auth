@@ -51,6 +51,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<Login/>} />
         <Route path="/friends" element={<Friends/>} />
 
       </Routes>
