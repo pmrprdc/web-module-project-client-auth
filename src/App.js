@@ -7,10 +7,12 @@ import Menu from './components/Menu'
 console.log(Login)
 function App() {
   return (
+ 
     <div className="App">
+      <Menu />
       <Routes>
         <Route path="/login" element={<Login/>} />
-        <Route path="/Menu" element={<Menu/>}/>
+       
       </Routes>
     
           </div>
