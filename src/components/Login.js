@@ -29,7 +29,7 @@ function Login() {
     const clickHandler = (e) => {
 
         
-        navigate('/friends')
+        
         axios.post(`${serverUrl}/api/login`, {username: username, password: password})
         .then((response) => {
           // Handle the successful response here
@@ -38,6 +38,8 @@ function Login() {
           localStorage.setItem('token', token);
           console.log("success")
           
+
+          navigate('/friends')
     
         })
         .catch((error) => {
