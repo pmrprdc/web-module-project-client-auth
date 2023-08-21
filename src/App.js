@@ -6,6 +6,7 @@ import Menu from './components/Menu'
 import axios from 'axios';
 import Friends from './components/Friendslist'
 import Addfriend from './components/Addfriend';
+import Logout from './components/Logout';
 
 
 
@@ -13,9 +14,6 @@ import Addfriend from './components/Addfriend';
 
 function App() {
 
-
-
-  
   
 
 
@@ -36,7 +34,7 @@ function App() {
         <Route path="/" element={<Login/>} />
         <Route path="/friends" element={<Friends/>} />
         <Route path="/addfriend" element={<Addfriend/>} />
-
+        <Route path="/logout" element= {<Logout />} />
       </Routes>
     
           </div>

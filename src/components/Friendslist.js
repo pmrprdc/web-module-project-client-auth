@@ -17,7 +17,7 @@ const FriendsList = () => {
     })
       .then(response => {
         setFriends(response.data); // Update the state with the retrieved data
-        console.log(friends)
+       
       })
       .catch(error => {
         console.error('Error retrieving friends list:', error.message);

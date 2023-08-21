@@ -10,7 +10,7 @@ export default function Addfriend () {
 
         <header>
             <h1>Add a friend!</h1>
-            <input type="email"/>
+            <input type="email" placeholder=''/>
     
       </header>
     
