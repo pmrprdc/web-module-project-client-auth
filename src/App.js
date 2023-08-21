@@ -13,32 +13,14 @@ import Addfriend from './components/Addfriend';
 
 function App() {
 
-  
 
 
-
-  const serverUrl = 'http://localhost:9000';
-  
-
-
-  useEffect(()=> {
-    axios.post(`${serverUrl}/api/login`, {username: "Bloom", password: "Tech"})
-    .then((response) => {
-      // Handle the successful response here
-     
-      const { token } = response.data;
-      localStorage.setItem('token', token);
-      
-
-    })
-    .catch((error) => {
-      // Handle errors here
-      console.error('Error:', error);
-    });
   
   
 
-  },[])
+
+
+
 
 
 
