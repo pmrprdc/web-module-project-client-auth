@@ -1,9 +1,19 @@
 // Import the necessary modules and packages
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 // Define the component function
 function Login() {
 
+    const navigate = useNavigate();
+
+    const clickHandler = (e) => {
+
+        
+        navigate('/friends')
+
+    }
 
     console.log(localStorage.getItem('token'))
   return (
@@ -29,7 +39,7 @@ function Login() {
       />
       </label>
       <br></br>
-      <button>SUBMIT</button>
+      <button onClick={clickHandler}>SUBMIT</button>
       
 
     </div>
