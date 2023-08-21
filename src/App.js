@@ -5,7 +5,7 @@ import Login from './components/Login';
 import Menu from './components/Menu'
 import axios from 'axios';
 import Friends from './components/Friendslist'
-
+import Addfriend from './components/Addfriend';
 
 
 
@@ -53,6 +53,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Login/>} />
         <Route path="/friends" element={<Friends/>} />
+        <Route path="/addfriend" element={<Addfriend/>} />
 
       </Routes>
     
