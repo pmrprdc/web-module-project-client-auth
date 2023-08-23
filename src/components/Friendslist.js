@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import { axiosWithAuth } from '../util/axiosWithAuth';
 const FriendsList = () => {
 
 
@@ -8,20 +8,13 @@ const FriendsList = () => {
 
   useEffect(() => {
     const apiUrl = 'http://localhost:9000'; // Replace with your API URL
-
-    // Make a GET request to retrieve the friends list
-    axios.get(`${apiUrl}/api/friends`, {
-      headers: {
-        Authorization: localStorage.getItem('token') // Replace with your actual token
-      }
-    })
-      .then(response => {
-        setFriends(response.data); // Update the state with the retrieved data
-       
-      })
-      .catch(error => {
+    axiosWithAuth().get('/api/friends').then(res=>{
+        setFriends(res.data)
+    }).catch(error => {
         console.error('Error retrieving friends list:', error.message);
       });
+    // Make a GET request to retrieve the friends list
+   
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
