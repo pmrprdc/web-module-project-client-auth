@@ -7,7 +7,6 @@ const FriendsList = () => {
   const [friends, setFriends] = useState([]);
 
   useEffect(() => {
-    const apiUrl = 'http://localhost:9000'; // Replace with your API URL
     axiosWithAuth().get('/api/friends').then(res=>{
         setFriends(res.data)
     }).catch(error => {
