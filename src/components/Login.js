@@ -33,14 +33,12 @@ function Login() {
         axios.post(`${serverUrl}/api/login`, {username: username, password: password})
         .then((response) => {
           // Handle the successful response here
-         
+            
           const { token } = response.data;
           localStorage.setItem('token', token);
-          console.log("success")
-          
-
+           setError("") 
           navigate('/friends')
-    
+            
         })
         .catch((error) => {
           // Handle errors here
