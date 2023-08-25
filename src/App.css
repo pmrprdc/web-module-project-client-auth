@@ -8,8 +8,38 @@
 .App {
   text-align: center;
   border: 1px solid black;
+  margin: auto auto;
+ 
+}
+.login-input-container {
+  
+
+  flex-flow: row;
+  align-items: stretch;
+  justify-content:flex-start;
+  border: 1px solid green;
   margin: 0 auto;
 }
+
+
+
+.login-input {
+  
+  width: 50%;
+  height: 10%;;
+  align-items: flex-end;
+  
+}
+.login-email-container {
+
+  align-items: space-between;
+}
+
+.login-pw-container {
+  align-items: flex-end;
+
+}
+
 
 .App-logo {
   height: 40vmin;

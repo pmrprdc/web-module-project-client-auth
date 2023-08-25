@@ -56,28 +56,47 @@ function Login() {
       <h1>LOGIN   
       </h1>
       {error.length>1 ? <h2>{error}</h2> : ""}
-      <label htmlFor="email">Email 
-      <input
-        type="email"
-        id="email"
-        placeholder="Enter your email"
-        value={email}    
-        onChange={(e)=> setEmail(e.target.value)}
-        />
-      </label>
+      <div className='login-input-container'>
 
-    <br></br>
-      <label htmlFor="email">Password 
+        <div className='login-email-container'>
+         <label htmlFor="email">
+            Email  </label>
+                <input
+                    className="login-input"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    value={email}    
+                    onChange={(e)=> setEmail(e.target.value)}
+                    />
+       
+        
+        </div>       
+     
+
+    
+        <div className='login-pw-container'>
+                <label htmlFor="password">
+                    Password</label>
+                    <input
+                        type="password"
+                        className="login-input"
+                        id="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e)=> setPassword(e.target.value)}
+                        />
+             
+        </div>
       
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-        value={password}
-        onChange={(e)=> setPassword(e.target.value)}
-      />
-      </label>
-      <br></br>
+     
+
+
+
+
+      </div>
+     
+     
       <button onClick={clickHandler}>SUBMIT</button>
       
 
