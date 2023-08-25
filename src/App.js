@@ -31,6 +31,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<Login/>} />
         <Route element={<PrivateRoutes />}>
             <Route path="/friends" element={<Friends/>} exact />
             <Route path="/friends/add" element={<Addfriend/>}  exact/>
