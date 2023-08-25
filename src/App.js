@@ -33,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route element={<PrivateRoutes />}>
             <Route path="/friends" element={<Friends/>} exact />
-            <Route path="/addfriend" element={<Addfriend/>}  exact/>
+            <Route path="/friends/add" element={<Addfriend/>}  exact/>
             <Route path="/logout" element= {<Logout />} exact />
         </Route>
         

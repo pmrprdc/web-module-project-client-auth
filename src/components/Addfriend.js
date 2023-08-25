@@ -1,18 +1,25 @@
 import React, {useState} from 'react';
 import { Navigate } from 'react-router-dom';
+import { axiosWithAuth } from '../util/axiosWithAuth';
 
-
-
+const axiosIntance = axiosWithAuth();
 
 export default function Addfriend () {
     const [error, setError] = useState ("");
     const  [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
+    const serverUrl = 'http://localhost:9000'
+
+
     const clickHandler = (e) => {
             console.log('add friend clicked')
             if(name.length>3 && email.length>3) {
-                console.log("success")
+                axiosIntance.post(`api/friends`, {id: 43,name: name, email: email}).then(res=>{
+                    console.log(res)
+                }).catch(err=>{
+                    console.log(err)
+                })
                 setError("")
             } else {
                 setError ("error, make sure you type a correct email and name greater than 3 characters")
