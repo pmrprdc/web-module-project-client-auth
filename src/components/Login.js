@@ -9,7 +9,7 @@ import { username } from '../mocks/credentials';
 function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    
+    const [error, setError] = useState("")
     
     const navigate = useNavigate();
     
@@ -44,7 +44,8 @@ function Login() {
         })
         .catch((error) => {
           // Handle errors here
-          console.error('Error:', error);11
+         
+          setError(error.message+ "PLEASE TRY AGAIN")
         });
         
 
@@ -56,6 +57,7 @@ function Login() {
         
       <h1>LOGIN   
       </h1>
+      {error.length>1 ? <h2>{error}</h2> : ""}
       <label htmlFor="email">Email 
       <input
         type="email"
