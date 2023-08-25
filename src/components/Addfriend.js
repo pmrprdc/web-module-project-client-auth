@@ -15,7 +15,7 @@ export default function Addfriend () {
     const clickHandler = (e) => {
             console.log('add friend clicked')
             if(name.length>3 && email.length>3) {
-                axiosIntance.post(`api/friends`, {id: 43,name: name, email: email}).then(res=>{
+                axiosIntance.post(`api/friends`, {id: name,name: name, email: email, age: 33}).then(res=>{
                     console.log(res)
                 }).catch(err=>{
                     console.log(err)
