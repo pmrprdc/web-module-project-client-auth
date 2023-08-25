@@ -15,16 +15,6 @@ import PrivateRoutes from './components/PrivateRoutes'
 function App() {
 
   
-
-
-
-
-
-
-
-
-
-
   return (
  
     <div className="App">
