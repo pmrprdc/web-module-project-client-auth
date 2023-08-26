@@ -1,6 +1,6 @@
 
 *{ 
-  background-color: #61dafb;
+  background-color: white;
 }
 
 
@@ -9,6 +9,9 @@
   text-align: center;
   border: 1px solid black;
   margin: auto auto;
+  height: 80%;
+  width: 50%;
+  margin-top: 20%;
  
 }
 .login-input-container {
@@ -21,24 +24,41 @@
   margin: 0 auto;
 }
 
-
+/* // login// login// login// login// login// login// login. */
 
 .login-input {
   
   width: 50%;
   height: 10%;;
-  align-items: flex-end;
+  align-items: flex-start;
   
 }
 .login-email-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+ 
+}
+.login-email-label {
+ background-color: green;
+}
 
-  align-items: space-between;
+.login-password-label {
+  margin-left: 20px;
+}
+.login-password-input, .login-email-input{
+  margin-right: 20px;
+
 }
 
 .login-pw-container {
-  align-items: flex-end;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
 
 }
+
 
 
 .App-logo {
@@ -74,4 +94,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* MENU STYLING //// MENU STYLING //// MENU STYLING //// MENU STYLING //// MENU STYLING ////*/
+
+.app-menu-container {
+  background-color: pink;
 }

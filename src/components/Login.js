@@ -59,10 +59,10 @@ function Login() {
       <div className='login-input-container'>
 
         <div className='login-email-container'>
-         <label htmlFor="email">
+         <label classname="login-email-label" htmlFor="email">
             Email  </label>
                 <input
-                    className="login-input"
+                    className="login-email-input"
                     type="email"
                     id="email"
                     placeholder="Enter your email"
@@ -76,11 +76,11 @@ function Login() {
 
     
         <div className='login-pw-container'>
-                <label htmlFor="password">
+                <label className='login-password-label' htmlFor="password">
                     Password</label>
                     <input
                         type="password"
-                        className="login-input"
+                        className="login-password-input"
                         id="password"
                         placeholder="Enter your password"
                         value={password}

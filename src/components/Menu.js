@@ -8,7 +8,7 @@ export default function Menu () {
 
     return(
 
-        <header>
+        <header className='app-menu-container'>
         <h1>FRIENDS DATABASE</h1>
       <Link to="./login">LOGIN </Link> 
       <Link to="./friends">FRIENDSLIST </Link>
