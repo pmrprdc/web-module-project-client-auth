@@ -53,7 +53,7 @@ function Login() {
     
     <div>
         
-      <h1>LOGIN   
+      <h1 className='login-header'>LOGIN   
       </h1>
       {error.length>1 ? <h2>{error}</h2> : ""}
       <div className='login-input-container'>
@@ -92,12 +92,12 @@ function Login() {
      
 
 
-
+        
 
       </div>
      
      
-      <button onClick={clickHandler}>SUBMIT</button>
+      <button className='login-submit-btn' onClick={clickHandler}>SUBMIT</button>
       
 
     </div>

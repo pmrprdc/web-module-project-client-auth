@@ -12,7 +12,15 @@
   height: 80%;
   width: 50%;
   margin-top: 20%;
+  padding-bottom: 1rem;
+
  
+}
+
+.login-submit-btn {
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
 }
 .login-input-container {
   
@@ -20,12 +28,19 @@
   flex-flow: row;
   align-items: stretch;
   justify-content:flex-start;
-  border: 1px solid green;
-  margin: 0 auto;
+  
+
 }
 
 /* // login// login// login// login// login// login// login. */
 
+
+.login-header {
+  color: white;
+  font-size: 0.5rem;
+  background-color: BLACK;
+  padding: 0.5rem;
+}
 .login-input {
   
   width: 50%;
@@ -38,11 +53,11 @@
   flex-direction: row;
   justify-content: space-between;
   margin-left: 20px;
+  margin-bottom:0.1rem;
+ 
  
 }
-.login-email-label {
- background-color: green;
-}
+
 
 .login-password-label {
   margin-left: 20px;
@@ -53,6 +68,7 @@
 }
 
 .login-pw-container {
+
  display: flex;
  align-items: flex-start;
  justify-content: space-between;
@@ -99,6 +115,23 @@
 
 /* MENU STYLING //// MENU STYLING //// MENU STYLING //// MENU STYLING //// MENU STYLING ////*/
 
-.app-menu-container {
-  background-color: pink;
+.app-menu-container{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.app-menu-container a {
+  text-decoration: none;
+  font-size: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+.menu-header{ 
+
+  font-size: 1rem;
+  
 }
